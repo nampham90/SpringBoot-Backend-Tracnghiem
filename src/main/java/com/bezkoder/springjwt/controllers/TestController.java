@@ -33,7 +33,7 @@ public class TestController {
 		return "Admin Board.";
 	}
 
-	@PostMapping("/data")
+	@GetMapping("/data")
 	public ResponseEntity<?> getDatatest(){
 		log.info("co gui gui den");
 		return ResponseEntity.ok().body("pham van nam");
